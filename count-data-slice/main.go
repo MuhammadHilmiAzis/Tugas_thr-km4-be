@@ -1,28 +1,27 @@
 package main
 
-import () 
-"fmt"
+import "fmt"
 
-func countElements(slice []interface{}) int {
-	return len(slice)
+func howManyElements(data []interface{}) int {
+	return len(data)
 }
 
 func main() {
-	sliceInt := []int{1, 2, 3, 4, 5}
-	fmt.Println(countElements(sliceInt)) // Output: 5
+	slice1 := []interface{}{1, 2, 3, 4, 5}
+	fmt.Println(howManyElements(slice1)) // output: 5
 
-	sliceInt = []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-	fmt.Println(countElements(sliceInt)) // Output: 10
+	slice2 := []interface{}{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	fmt.Println(howManyElements(slice2)) // output: 10
 
-	sliceInt = []int{1, 1, 1, 5, 5, 5}
-	fmt.Println(countElements(sliceInt)) // Output: 6
+	slice3 := []interface{}{1, 1, 1, 5, 5, 5}
+	fmt.Println(howManyElements(slice3)) // output: 6
 
-	sliceString := []string{"Edo", "Budi", "Joko", "Tono"}
-	fmt.Println(countElements(sliceString)) // Output: 4
+	slice4 := []interface{}{"Edo", "Budi", "Joko", "Tono"}
+	fmt.Println(howManyElements(slice4)) // output: 4
 
-	sliceString = []string{"Edo", "Budi", "Joko", "Tono", "Edo", "Budi", "Joko", "Tono"}
-	fmt.Println(countElements(sliceString)) // Output: 8
+	slice5 := []interface{}{"Edo", "Budi", "Joko", "Tono", "Edo", "Budi", "Joko", "Tono"}
+	fmt.Println(howManyElements(slice5)) // output: 8
 
-	sliceBool := []bool{true, false, true, false, true, false}
-	fmt.Println(countElements(sliceBool)) // Output: 6
+	slice6 := []interface{}{true, false, true, false, true, false}
+	fmt.Println(howManyElements(slice6)) // output: 6
 }
